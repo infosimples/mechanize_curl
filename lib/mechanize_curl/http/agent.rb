@@ -354,6 +354,7 @@ class MechanizeCurl::HTTP::Agent
     curl.max_redirects   = @redirection_limit
     curl.proxy_url       = proxy_uri.to_s if proxy_uri
     curl.ssl_verify_host = @verify_mode != 0
+    curl.ssl_verify_peer = @verify_mode != 0
     curl.timeout         = @read_timeout
     curl.url             = uri.to_s
     curl.useragent       = @user_agent
