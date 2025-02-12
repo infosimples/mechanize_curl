@@ -1,6 +1,10 @@
 # Mechanize CHANGELOG
 
 # Mechanize after CURL fork
+## 0.0.3 / 2025-02-12
+
+*`verify_mode` now also sets `ssl_verify_peer`. @adrianodennanni
+
 ## 0.0.2 / 2024-12-04
 
 * Fix `make_tempfile` being accessed only inside one class. @adrianodennanni
